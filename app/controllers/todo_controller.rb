@@ -6,6 +6,7 @@ class TodoController < ApplicationController
     def show 
      @todo_description="walked the dogs"
      @pomodoros=2
+     @id=params[:id]
     end
 end 
 
