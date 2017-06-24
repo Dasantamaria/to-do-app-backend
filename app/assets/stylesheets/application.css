@@ -1,4 +1,6 @@
 /*
+Contact GitHub API Training Shop Blog About
+
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -12,4 +14,42 @@
  *
  *= require_tree .
  *= require_self
- */
+*/
+h3 {
+    color:blue;
+    background-color:orange;
+}
+
+.pomodoros {
+    background-color:#f6ff5e;
+    color:#017a76;
+    padding:0px;
+    margin:6px;
+    border:9px;
+    border-radius:10px;
+    height:20px;
+    width:15px;
+}
+#pomodoro {
+    background-color:#5fc976;
+    color:purple;
+    padding:0px;
+    margin:6px;
+    border:9px;
+    border-radius:10px;
+    width:15px;
+    height:20px;
+} 
+ul {list-style-type: none;}
+#pomodoro:hover {background-color: #3dffeb;}
+.pomodoros:hover {background-color:#ec5cf9;}
+div {
+    background-color:#b7b7b7;
+    width:1000px;
+    height:160px;
+    border-radius:14px;
+    border:14px;
+    padding:20px;
+    margin:auto;
+}
+.slash {text-decoration:line-through}
