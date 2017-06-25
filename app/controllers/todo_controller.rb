@@ -24,7 +24,12 @@ class TodoController < ApplicationController
          t.pomodoro_estimate = params['pomodoro_estimate']
          t.save
         redirect_to "/todo/show/#{ t.id }"
-    end    
+    end  
+    def destroy
+        t = Todo.find(params[:id])
+        t.destroy
+        redirect_to "todo/index/"
+    end
 end
     
 
