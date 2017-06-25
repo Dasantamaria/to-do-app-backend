@@ -30,6 +30,16 @@ class TodoController < ApplicationController
         t.destroy
         redirect_to "/todo/index"
     end
+    def completion
+        todo=Todo.find(params[:id])
+        if todo.complete 
+            todo.complete=false
+        else 
+            todo.complete=true
+        end
+        todo.save
+        redirect_to root_path
+    end
 end
     
 

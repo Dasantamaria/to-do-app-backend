@@ -61,5 +61,6 @@ Rails.application.routes.draw do
   get 'todo/edit/:id',to:'todo#edit'
   get 'todo/update/:id',to:'todo#update'
   get 'todo/destroy/:id',to:'todo#destroy'
+  get 'todo/completion/:id',to:'todo#completion'
 end
 

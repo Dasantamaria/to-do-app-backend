@@ -44,7 +44,7 @@ ul {list-style-type: none;}
 #pomodoro:hover {background-color: #3dffeb;}
 .pomodoros:hover {background-color:#ec5cf9;}
 div {
-    background-color:#b7b7b7;
+    background-color:#e5dede;
     width:1000px;
     height:160px;
     border-radius:14px;
@@ -52,4 +52,6 @@ div {
     padding:20px;
     margin:auto;
 }
-.slash {text-decoration:line-through}
+.slash {text-decoration:line-through;
+    background-color:#ce0c0c;
+}

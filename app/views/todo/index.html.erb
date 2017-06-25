@@ -3,7 +3,12 @@
    <ul>
       <% @todos.each do |todo| %>
       <li>
-          <input type="checkbox"><a href="/todo/show/<%=todo.id%>"><%= todo.description %></a>
+          <a href="/todo/completion/<%=todo.id%>"><input type="checkbox"></a>
+          <%if todo.complete == true%>
+            <a class="slash" href="/todo/show/<%=todo.id%>"><%= todo.description %></a>
+           <% else %>
+            <a href="/todo/show/<%=todo.id%>"><%= todo.description %></a>
+           <% end %>
           <span class="pomodoros"><%= todo.pomodoro_estimate %></span>
       </li>
       <% end %> 
