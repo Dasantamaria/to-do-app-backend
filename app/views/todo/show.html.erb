@@ -2,13 +2,10 @@
  <h2>Lists</h2>
    <ul class="change">
     <li><input type="checkbox"><%=@todo.description%>
-    <span class="school">2pomodoros</span>
+    <span class="school"><%= @todo.pomodoro_estimate %></span>
     </li>
     </ul>
-    <input type="text" placeholder="goal">
-    <input type="text" placeholder="time"><br>
     <a href="/todo/edit/<%=@todo.id%>"><button type="button">Edit</button></a>
-    <button type="button">Delete</button><br>
-    <button type="button">Submit</button><br>
+    <a href="/todo/destroy/<%=@todo.id%>">delete</a>
     <a href="/todo/index">home</a>
    

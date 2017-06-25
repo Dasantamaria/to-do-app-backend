@@ -1,7 +1,7 @@
 
 class TodoController < ApplicationController 
     def index 
-    @math=4+4
+    @todos = Todo.all
     end
     def show 
         @todo=Todo.find(params[:id])
@@ -28,7 +28,7 @@ class TodoController < ApplicationController
     def destroy
         t = Todo.find(params[:id])
         t.destroy
-        redirect_to "todo/index/"
+        redirect_to "/todo/index"
     end
 end
     

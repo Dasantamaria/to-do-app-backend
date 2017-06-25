@@ -1,23 +1,13 @@
- <h3>to do app</h3> 
-     <div>
-        <ul>
-       <li>
-           <input type="checkbox"><a href="show/1">walked my dogs.</a> 
-           <span class="pomodoros">2pomodoros</span>
-        </li>
-       <li>
-           <input type="checkbox"><a href="show/2"> Did all my homework.</a>
-           <span id="pomodoro">1pomodoro</span>
-        </li>
-       <li>
-           <input type="checkbox"><a href="show/3"> Went to sleep.</a>
-           <span class="pomodoros">4pomodoros</span>
-        </li>
-        
-        </ul>
-        </div>
-        <img src="http://www.cscproject.org/sites/default/files/logos/codenow_logo_0.png?1458057226" title="codenow logo"><br>
-        <input type="text" placeholder="thing">
-        <input type="number" placeholder="amount"><br>
-        <input type="submit" value="submit">
-        <%=@math%>
+<h3>to do app</h3> 
+<div>
+   <ul>
+      <% @todos.each do |todo| %>
+      <li>
+          <input type="checkbox"><a href="/todo/show/<%=todo.id%>"><%= todo.description %></a>
+          <span class="pomodoros"><%= todo.pomodoro_estimate %></span>
+      </li>
+      <% end %> 
+   </ul>
+</div>
+<img src="http://www.cscproject.org/sites/default/files/logos/codenow_logo_0.png?1458057226" title="codenow logo"><br>
+<a href="/todo/new">make a new todo</a>
